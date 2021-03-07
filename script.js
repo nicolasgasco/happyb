@@ -186,7 +186,7 @@ function whatRMCharacterAreYou() {
                 document.querySelector("#show-content").innerHTML =
                 `
                 <h2>${data.name}</h2>
-                <img src=${data.image} alt="Picture of ${data.name}" style="width:70%; border-radius:5px">
+                <img src=${data.image} alt="Picture of ${data.name}" style="width:90%; border-radius:5px">
                 `
 
                 document.querySelector("#show-content").style.display = "block";
