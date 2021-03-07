@@ -64,18 +64,23 @@ function celebrateUser() {
 
         document.querySelector("#div-intro").innerHTML = ``;
     
+        document.querySelector("footer").innerHTML += 
 
-        document.querySelector("#show-content").innerHTML += 
+            `
+            <div id="appearing-gifs">
 
-            `<img id="confetti" src="./img/confetti.gif" style="position:fixed; top:0px; left:0px; bottom:0px; right:0px; width:100%; height:100%; object-fit: fill; border:none; margin:0; padding:0; overflow:hidden; z-index:999999;">
+            <img id="confetti" src="./img/confetti.gif" style="position:fixed; top:0px; left:0px; bottom:0px; right:0px; width:100%; height:100%; object-fit: fill; border:none; margin:0; padding:0; overflow:hidden; z-index:999999;">
             <img src="./img/happybd.gif" style="position:fixed; top:10%; left:35%; border:none; margin:0; padding:0; overflow:hidden; z-index:999;">
+            </div>
             `
         
         
         setTimeout( function () {
-            document.querySelector("#show-content").innerHTML = ``;
+            document.querySelector("#appearing-gifs").innerHTML = ``;
+            document.querySelector("#appearing-gifs").remove();
+
             }
-            , 100)
+            , 2000)
         
         showPresents();
 
