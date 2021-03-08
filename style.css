@@ -155,6 +155,12 @@ button:hover {
     margin-bottom: 4px;
 }
 
+button:active, button:focus {
+    outline: 0;
+    border-bottom: 4px solid white;
+    margin-bottom: 4px;
+
+}
 
 #div-intro, #show-content {
     border-radius: 10px;
