@@ -152,6 +152,7 @@ function receiveRandomInsult() {
 
 function whatRMCharacterAreYou() {
     const introDiv = document.querySelector("#div-intro");
+    document.querySelector("#show-content").style.display = "none"
 
     introDiv.innerHTML =
         `
@@ -198,6 +199,7 @@ function whatRMCharacterAreYou() {
 }
 
 function showNASAPictureDay() {
+    document.querySelector("#show-content").style.display = "none"
     const introDiv = document.querySelector("#div-intro");
 
     introDiv.innerHTML =
